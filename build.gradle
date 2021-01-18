@@ -30,11 +30,13 @@ buildPlugin {
     buildSearchableOptions.enabled = false
 }
 intellij {
-    version "2020.2.4"
-    type "IU"
     pluginName = 'free-mybatis-plugin'
     plugins = ['coverage', 'Spring', 'DatabaseTools', 'java']
     intellij.updateSinceUntilBuild false
+    sandboxDirectory = "D:/dev/idea-sandbox"
+    updateSinceUntilBuild false
+    downloadSources false
+    localPath 'D:/dev/ideaIU-2020.2.3.win'
 }
 patchPluginXml {
     changeNotes """
